@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Logo Styles*/
+
+.logo {
+    padding: 10px;
+}
+
+
+/*Nav Menu*/
+
+.liMenu {
+    display: flex;
+}
+
+.h4List {
+    padding: 10px;
+}
+
+
+/*Login Details*/
+
+.login-details {
+    display: flex;
+    padding: 10px;
+}
+
+.sign-up {
+    padding: 0 5px;
+}
+
+.sign-in {
+    padding: 0 5px;
+}
