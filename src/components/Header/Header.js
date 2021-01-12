@@ -1,30 +1,28 @@
 import React from "react";
 import "./styles.css";
+import {Link} from "react-router-dom";
 
 function Header () {
     return(
         <div className="Header">
             <section className="container">
                 <div className="logo">
-                    <h3>Essential English School</h3>
+                    <h3><Link to="/Home">Essential English School</Link></h3>
                 </div>
                 <div className="menuList">
                     <ul className="ulMenu">
-                        <li className="liMenu">
-                            <h4 className="h4List"><a href="">Home</a></h4>
-                            <h4 className="h4List"><a href="">About us</a></h4>
-                            <h4 className="h4List"><a href="">Courses</a></h4>
-                            <h4 className="h4List"><a href="">Live Forum</a></h4>
-                            <h4 className="h4List"><a href="">Feedback</a></h4>
-                            <h4 className="h4List"><a href="">Notifications</a></h4>
-
-                        </li>
+                         <li className="h4List"><Link to="/Home">Home</Link></li>
+                         <li className="h4List"><Link to="/AboutUs">About Us</Link></li>
+                         <li className="h4List"><Link to="/Courses">Courses</Link></li>
+                         <li className="h4List"><Link to="/LiveForum">Live Forum</Link></li>
+                         <li className="h4List"><Link to="/Feedback">Feedback</Link></li>
+                         <li className="h4List"><Link to="/Notifications">Notifications</Link></li>
                     </ul>
                 </div>
-                <sign className="login-details">
-                    <h4 className="sign-up"><a href="">Sign up</a></h4>
-                    <h4 className="sign-in"><a href="">Sign in</a></h4>
-                </sign>
+                <div className="login-details">
+                    <h4 className="sign-up"><Link to="/SignUpForm">Sign Up</Link></h4>
+                    <h4 className="sign-in"><Link to="/SignInForm">Sign In</Link></h4>
+                </div>
             </section>
         </div>
     )

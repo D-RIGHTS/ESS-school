@@ -1,13 +1,16 @@
 import React from "react";
 import "./styles.css"
+import { Link } from "react-router-dom";
+
 function HeroSection () {
+
     return(
         <div className="HeroSection-styles">
             <section className="HeroSection-container">
                 <div className="WelcomeNote">
                     <h3>Welcome to the Essential English School, were dreams are turned into reality. EES prides its self with the work it has put in for the past years. Dont feel left us! Get to know more about EES.</h3>
                 </div>
-                <div className="btn">Learn More</div>
+                <div className="btn"><Link to="/OfflineNote">Learn More</Link></div>
             </section>
             <section className="requestFormSection">
                 <div className="requestFormContainer">

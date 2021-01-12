@@ -1,0 +1,49 @@
+.LevelImages {
+    height: 250px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.LevelCardsContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*text-align: center;*/
+
+}
+
+
+
+.cardLess {
+    padding: 5px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px #616060;
+    background: #f8e6e6;
+}
+
+.LevelTitle {
+    color: green;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.LevelDescription {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.levelbtn {
+    border: none;
+    border-radius: 10px;
+    color: red;
+    font-style: italic;
+    font-size: 1rem;
+    background: deepskyblue;
+    padding: 5px;
+    margin: 5px;
+}

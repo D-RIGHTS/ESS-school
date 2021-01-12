@@ -1,0 +1,8 @@
+.Courses {
+    background: linear-gradient(130deg,white, whitesmoke, green, whitesmoke, white);
+    padding: 60px;
+    height: 800px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}

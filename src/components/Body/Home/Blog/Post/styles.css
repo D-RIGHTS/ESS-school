@@ -1,0 +1,25 @@
+.postSec {
+    margin: 30px;
+}
+
+.postTitle,
+.postParagraph {
+    padding: 10px 0;
+}
+
+.postEdit {
+    padding: 5px;
+    margin: 1px;
+    background: yellow;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.postDelete {
+    padding: 5px;
+    margin: 10px;
+    background: red;
+    font-size: 12px;
+    border-radius: 5px;
+}
+

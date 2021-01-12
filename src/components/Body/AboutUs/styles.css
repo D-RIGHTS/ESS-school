@@ -1,0 +1,8 @@
+.AboutUs{
+    background: linear-gradient(130deg,white, whitesmoke, gold, whitesmoke, white);
+    padding: 60px;
+    height: 770px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}

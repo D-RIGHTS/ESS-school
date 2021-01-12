@@ -1,3 +1,17 @@
+.signUpDiv {
+    background: linear-gradient(130deg,white, whitesmoke, brown, whitesmoke, white);
+    padding: 60px;
+    height: 800px;
+
+}
+
+.signInDiv {
+    background: linear-gradient(130deg,white, whitesmoke, brown, whitesmoke, white);
+    padding: 60px;
+    height: 800px;
+
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -12,7 +26,7 @@
 
 /*Nav Menu*/
 
-.liMenu {
+.ulMenu {
     display: flex;
 }
 
@@ -30,8 +44,62 @@
 
 .sign-up {
     padding: 0 5px;
+    background: #dec0f6;
+    border-radius: 10px;
+    margin: 0 5px;
 }
 
 .sign-in {
     padding: 0 5px;
+    background: #dec0f6;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+/*Form Styles*/
+
+.sign-in-form,
+.sign-up-form {
+    border: 3px solid #dca5a5;
+    border-radius: 10px;
+    background: #fcf2f2;
+    padding: 20px;
+}
+
+.sign-in-container,
+.sign-up-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.Loginbtn {
+    border: none;
+    background: #dca5a5;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/*Sign up styles*/
+
+.terms,
+.password {
+    color: deepskyblue;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.termsAndCond {
+    font-size: 50px;
 }

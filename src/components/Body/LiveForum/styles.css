@@ -1,0 +1,8 @@
+.LiveForum {
+    background: linear-gradient(130deg,white, whitesmoke, deepskyblue, whitesmoke, white);
+    padding: 60px;
+    height: 800px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}

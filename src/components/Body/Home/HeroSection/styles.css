@@ -12,8 +12,8 @@
 .HeroSection-styles::after {
  content: "";
  position: absolute;
- height: 100px;
- bottom: 300px;
+ height: 15px;
+ top: 525px;
  right: 0;
  left: 0;
  background: white;
@@ -95,4 +95,5 @@
  border-radius: 10px;
  padding: 5px;
  background: lightyellow;
+ margin: 10px;
 }
