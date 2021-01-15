@@ -2,56 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1405f1f8-ef40-4524-a484-b76487b03343" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Academic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/BlogImage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/BusinessEnglish.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/IELTS.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Listening.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Reading.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Speaking.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/writing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/Blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/CreateNewPost/CreateNewPost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/CreateNewPost/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/DisplayAllPosts/DisplayAllPosts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/DisplayAllPosts/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/ModifyPost/ModifyPost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/ModifyPost/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/Objective/Oblective.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/Objective/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/Post/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/Blog/Post/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/LevelCards/LevelCards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Home/LevelCards/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/OfflineNote.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/SignInForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/SignUpForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/AboutUs/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/AboutUs/AboutUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/AboutUs/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/AboutUs/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Courses/Courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Courses/Courses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Courses/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Courses/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Feedback/Feedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Feedback/Feedback.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Feedback/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Feedback/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Body/Home/HeroSection/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Home/HeroSection/HeroSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Home/HeroSection/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Home/HeroSection/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/LiveForum/LiveForum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/LiveForum/LiveForum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/LiveForum/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/LiveForum/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Notifications/Notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Notifications/Notifications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Notifications/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Notifications/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/SignInForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/SignInForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/SignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/SignUpForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +35,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -108,7 +65,9 @@
       <workItem from="1609332454599" duration="42947000" />
       <workItem from="1610378897546" duration="6007000" />
       <workItem from="1610454785875" duration="1620000" />
-      <workItem from="1610473114756" duration="307000" />
+      <workItem from="1610473114756" duration="648000" />
+      <workItem from="1610619127212" duration="12008000" />
+      <workItem from="1610720019272" duration="5049000" />
     </task>
     <servers />
   </component>
