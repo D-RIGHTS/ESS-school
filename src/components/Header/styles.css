@@ -103,3 +103,18 @@
 .termsAndCond {
     font-size: 50px;
 }
+
+.signUpTxt {
+    font-size: 13px;
+    padding: 0 5px;
+}
+
+.submitting {
+    padding: 5px 0;
+}
+
+.sign-up-container p {
+    color: red;
+    font-style: italic;
+    font-family: sans-serif;
+}

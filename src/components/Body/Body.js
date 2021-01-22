@@ -11,8 +11,7 @@ import SignUpForm from "../Header/SignUpForm";
 import SignInForm from "../Header/SignInForm";
 import OfflineNote from "./OfflineNote";
 
-
-function Body () {
+function Body() {
     return(
         <div className="Body-styles">
             <Route path="/Home" render={() => <Home /> } />
