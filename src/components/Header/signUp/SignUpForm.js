@@ -1,10 +1,10 @@
 import React , { useEffect } from "react";
-import "./styles.css";
-import useForm from "./signUp/useForm";
-import validate from "./signUp/validateInfo";
-import FormSuccess from "../../BodyNonAuthenticated/FormSuccess";
+import "../styles.css";
+import useForm from "./useForm";
+import validate from "./validateInfo";
+import FormSuccess from "../../../BodyNonAuthenticated/FormSuccess";
 import { useHistory } from "react-router-dom";
-import { Input } from "./signUp/input";
+import { Input } from "./input";
 import axios from "axios";
 
 function SignUpForm({  isSubmitted }) {

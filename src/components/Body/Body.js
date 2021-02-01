@@ -7,8 +7,8 @@ import Courses from "./Courses/Courses";
 import LiveForum from "./LiveForum/LiveForum";
 import Feedback from "./Feedback/Feedback";
 import Notifications from "./Notifications/Notifications";
-import SignUpForm from "../Header/SignUpForm";
-import SignInForm from "../Header/SignInForm";
+import SignUpForm from "../Header/signUp/SignUpForm";
+import SignInForm from "../Header/signIn/SignInForm";
 import OfflineNote from "./OfflineNote";
 
 function Body() {

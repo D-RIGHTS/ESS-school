@@ -1,12 +1,13 @@
 import React from "react";
 import "./styles.css";
 
-function Post ({title,content}) {
+function Post ({title,fullText, description}) {
     return (
         <>
             <section className="postSec">
                 <h3 className="postTitle">{title}</h3>
-                <p className="postParagraph">{content}</p>
+                <h3 className="postTitle">{description}</h3>
+                <p className="postParagraph">{fullText}</p>
                 <button className="postEdit">Edit</button>
                 <button className="postDelete" >Delete</button>
             </section>

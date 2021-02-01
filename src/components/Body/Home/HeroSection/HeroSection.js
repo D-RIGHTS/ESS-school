@@ -40,6 +40,10 @@ const HeroSection = () => {
             name: formData.name,
             surname: formData.surname,
             email: formData.email
+        }, {
+            headers:{
+                Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmYjI0NWNjMTRlYjRiMjI3NTI5NTEwZCIsImVtYWlsIjoiZHVtaXNhbmlAZHVtaS5jb20iLCJuYW1lIjoiRHVtZXp3ZW5pIiwiZGF0ZUNyZWF0ZWQiOiIyMDIwLTExLTE2VDA5OjI2OjM2LjI4OVoiLCJfX3YiOjB9LCJpYXQiOjE2MTE2NzE1NDgsImV4cCI6MTYxMTY3NTE0OH0.FneEwQCiNyBzdmedU0sNPpxd-gAnePDmdsaAqvuxoNI"
+            }
         })
             .then((res) =>{
                 if (res.data.accessToken) {

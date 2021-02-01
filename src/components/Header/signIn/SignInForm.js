@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "../styles.css";
 
 function SignInForm (){
 
@@ -12,13 +12,13 @@ function SignInForm (){
                 <form className="sign-in-form">
                     <label htmlFor="email">Email Address:</label>
                     <input
-                        type="email"
+                        fieldName="email"
                         placeholder="Enter email"
                         required=""
                     />
                     <label htmlFor="password">Password:</label>
                     <input
-                        type="password"
+                        fieldName="password"
                         placeholder="Password"
                         required=""
                     />
