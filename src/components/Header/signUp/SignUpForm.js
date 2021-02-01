@@ -1,10 +1,10 @@
 import React , { useEffect } from "react";
 import "./styles.css";
-import useForm from "./useForm";
-import validate from "./validateInfo";
+import useForm from "./signUp/useForm";
+import validate from "./signUp/validateInfo";
 import FormSuccess from "../../BodyNonAuthenticated/FormSuccess";
 import { useHistory } from "react-router-dom";
-import { Input } from "../input";
+import { Input } from "./signUp/input";
 import axios from "axios";
 
 function SignUpForm({  isSubmitted }) {
@@ -19,7 +19,7 @@ function SignUpForm({  isSubmitted }) {
             values.password &&
             values.surname &&
             values.verifyPassword;
-        doRedirect && history.push('/Home');
+        doRedirect && history.push('/SignInForm');
     }, [errors, history]);
 
     // console.log('errors', errors);

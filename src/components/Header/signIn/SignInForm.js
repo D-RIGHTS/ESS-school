@@ -11,9 +11,17 @@ function SignInForm (){
                 <br />
                 <form className="sign-in-form">
                     <label htmlFor="email">Email Address:</label>
-                    <input type="email" placeholder="Enter email" required=""/>
+                    <input
+                        type="email"
+                        placeholder="Enter email"
+                        required=""
+                    />
                     <label htmlFor="password">Password:</label>
-                    <input type="password" placeholder="Password" required=""/>
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        required=""
+                    />
                     <label>
                         <input type="checkbox"  name="remember"/>   Remember me
                     </label>
