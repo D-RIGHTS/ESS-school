@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles.css";
 
+
 function SignInForm (){
 
     return(
@@ -15,12 +16,17 @@ function SignInForm (){
                         fieldName="email"
                         placeholder="Enter email"
                         required=""
+                        // values={values}
+                        // onChange={handleChange}
                     />
                     <label htmlFor="password">Password:</label>
                     <input
                         fieldName="password"
                         placeholder="Password"
                         required=""
+                        // values={values}
+                        // onChange={handleChange}
+
                     />
                     <label>
                         <input type="checkbox"  name="remember"/>   Remember me
