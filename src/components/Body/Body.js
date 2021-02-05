@@ -1,5 +1,4 @@
-import React from "react";
-import "./styles.css"
+import React, { useState } from "react";
 import { Route } from "react-router-dom";
 import Home from "./Home/Home";
 import AboutUs from "./AboutUs/AboutUs";
@@ -10,6 +9,7 @@ import Notifications from "./Notifications/Notifications";
 import SignUpForm from "../Header/signUp/SignUpForm";
 import SignInForm from "../Header/signIn/SignInForm";
 import OfflineNote from "./OfflineNote";
+import "./styles.css"
 
 function Body() {
     return(

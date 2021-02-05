@@ -13,19 +13,20 @@ function SignInForm (){
                 <form className="sign-in-form">
                     <label htmlFor="email">Email Address:</label>
                     <input
-                        fieldName="email"
+                        id="name"
+                        type=""
+                        name="email"
                         placeholder="Enter email"
                         required=""
-                        // values={values}
-                        // onChange={handleChange}
+
                     />
                     <label htmlFor="password">Password:</label>
                     <input
-                        fieldName="password"
+                        id="name"
+                        name="password"
                         placeholder="Password"
                         required=""
-                        // values={values}
-                        // onChange={handleChange}
+
 
                     />
                     <label>

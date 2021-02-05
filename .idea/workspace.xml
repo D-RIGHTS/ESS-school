@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1405f1f8-ef40-4524-a484-b76487b03343" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Home/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/signIn/SignInForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/signIn/SignInForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/signIn/signInInputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/signIn/signInInputs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/signIn/signInValidateInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/signIn/signInValidateInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/signIn/useSignInUseForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/signIn/useSignInUseForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/signUp/SignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/signUp/SignUpForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/signUp/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/signUp/input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/signUp/useForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/signUp/useForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/signUp/validateInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/signUp/validateInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/signUpBogdan/signUpBogdan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Up/signUpBogdan/signUpBogdan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Global-Watch-Dealers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -77,6 +96,10 @@
       <workItem from="1612183584664" duration="8534000" />
       <workItem from="1612271886781" duration="4610000" />
       <workItem from="1612276516743" duration="2507000" />
+      <workItem from="1612291434063" duration="6326000" />
+      <workItem from="1612344070031" duration="18894000" />
+      <workItem from="1612442057873" duration="6965000" />
+      <workItem from="1612526752513" duration="511000" />
     </task>
     <servers />
   </component>
@@ -94,5 +117,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1612525190256">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1612525190256" />
   </component>
 </project>
