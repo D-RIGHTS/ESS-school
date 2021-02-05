@@ -9,9 +9,6 @@ export default function validateInfo(values) {
         errors.email = "Email required"
     }
 
-    // if(!values.surname) {
-    //     errors.surname = "Surname required"
-    // }
 
     if(!values.password) {
         errors.password = 'Password is required'
