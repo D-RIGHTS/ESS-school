@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import validate from "./validateInfo";
+import validateInfo from "./validateInfo";
 import axios from "axios"
 
 const useForm = (initialValues) => {
@@ -20,7 +20,7 @@ const useForm = (initialValues) => {
     const handleSubmit = event => {
         event.preventDefault();
 
-        const errors = validate(values);
+        const errors = validateInfo(values);
         setErrors(errors)
         const isErrors = Object.keys(errors).length !== 0;
         !isErrors && setIsSubmitting(true);

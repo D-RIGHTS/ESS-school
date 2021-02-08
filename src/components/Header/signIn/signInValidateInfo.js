@@ -1,4 +1,4 @@
-export default function signInValidationInfo(values) {
+export default function ValidationInfo(values) {
     let errors ={};
 
     if(!values.email.trim()) {

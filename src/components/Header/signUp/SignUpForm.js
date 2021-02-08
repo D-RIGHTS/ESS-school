@@ -13,10 +13,6 @@ function SignUpForm() {
     });
 
 
-
-
-
-
     return (
         <div className="signUpDiv">
             {!isSubmitting && <div className="sign-up-container">
