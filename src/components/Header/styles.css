@@ -119,3 +119,8 @@
     font-style: italic;
     font-family: sans-serif;
 }
+
+.FormSuccess,
+.Success {
+    color: #151714;
+}

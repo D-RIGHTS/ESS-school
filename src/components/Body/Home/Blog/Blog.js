@@ -1,8 +1,7 @@
 import React from "react";
 import "./Objective/styles.css";
-
 import Objective from "./Objective/Oblective";
-import DisplayAllPosts from "./DisplayAllPosts/DisplayAllPosts.js";
+import DisplayAllPosts from "./DisplayAllPosts/DisplayAllPosts"
 
 function Blog () {
     return (
