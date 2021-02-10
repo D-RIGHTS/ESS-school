@@ -1,19 +1,19 @@
 import React from "react";
 import "./styles.css";
 
-const CreateNewPost = () => {
+const CreateNewPost = ({saveTitle, saveDescription, saveFullText}) => {
     return (
         <>
             <form>
                 <h1>Create your Post!</h1>
                 <br />
-                <input type="text" placeholder="title" size="39" required />
+                <input type="text" onChange={saveTitle} placeholder="title" size="39" required />
                 <br />
                 <br />
-                <input type="text" placeholder="description" size="39" required />
+                <input type="text" onChange={saveDescription} placeholder="description" size="39" required />
                 <br />
                 <br />
-                <textarea placeholder="Full Text" name="text"  cols="41" rows="10"></textarea>
+                <textarea type="text" placeholder="Full Text" onChange={saveFullText} name="text"  cols="41" rows="10" />
                 <br />
                 <button>Save Post</button>
             </form>
