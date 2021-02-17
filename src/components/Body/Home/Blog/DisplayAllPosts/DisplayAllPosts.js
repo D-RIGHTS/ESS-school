@@ -56,10 +56,10 @@ const DisplayAllPosts = () => {
         });
         setAllPosts(modifiedPost)
 
-        axios.delete("http://localhost:3001/api/v1/posts/602a50ffe2d99a1596510ff9",
+        axios.delete("http://localhost:3001/api/v1/posts/602d1d287b5962197105acf1",
             {
             headers: {
-                authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMjNmNTM0NGVhZTVlNGI0ZmI4M2VlMSIsIm5hbWUiOiJEdW1pc2FuaSBSb2RyaWNrIiwiZW1haWwiOiJyb2RyaWNrZHVtaUByaWdodHMuY29tIiwiZGF0ZUNyZWF0ZWQiOiIyMDIxLTAyLTEwVDE1OjAxOjA4LjIxMloiLCJfX3YiOjB9LCJpYXQiOjE2MTMzODM4MzAsImV4cCI6MTYxMzM4NzQzMH0.S5DmgD1I0yptgtXaUNFqT24XyxkBd1sw8RVCVl88vy8"
+                authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMjNmNTM0NGVhZTVlNGI0ZmI4M2VlMSIsIm5hbWUiOiJEdW1pc2FuaSBSb2RyaWNrIiwiZW1haWwiOiJyb2RyaWNrZHVtaUByaWdodHMuY29tIiwiZGF0ZUNyZWF0ZWQiOiIyMDIxLTAyLTEwVDE1OjAxOjA4LjIxMloiLCJfX3YiOjB9LCJpYXQiOjE2MTM1NjczNjYsImV4cCI6MTYxMzU3MDk2Nn0.GVdgtN7ZNXLT64I8xC86645hR2Sc0Nx9YBbdapXd5vU"
             }
         }).then((response) => {
             console.log('response', response)
@@ -84,13 +84,13 @@ const DisplayAllPosts = () => {
         setAllPosts(updatedPost);
         toggleModify();
 
-        axios.patch("http://localhost:3001/api/v1/posts/602a50ffe2d99a1596510ff9", {
+        axios.patch("http://localhost:3001/api/v1/posts/602d1d287b5962197105acf1", {
             title:title,
             description:description,
             fullText:fullText
         }, {
             headers:{
-                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMjNmNTM0NGVhZTVlNGI0ZmI4M2VlMSIsIm5hbWUiOiJEdW1pc2FuaSBSb2RyaWNrIiwiZW1haWwiOiJyb2RyaWNrZHVtaUByaWdodHMuY29tIiwiZGF0ZUNyZWF0ZWQiOiIyMDIxLTAyLTEwVDE1OjAxOjA4LjIxMloiLCJfX3YiOjB9LCJpYXQiOjE2MTMzODM4MzAsImV4cCI6MTYxMzM4NzQzMH0.S5DmgD1I0yptgtXaUNFqT24XyxkBd1sw8RVCVl88vy8"
+                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMjNmNTM0NGVhZTVlNGI0ZmI4M2VlMSIsIm5hbWUiOiJEdW1pc2FuaSBSb2RyaWNrIiwiZW1haWwiOiJyb2RyaWNrZHVtaUByaWdodHMuY29tIiwiZGF0ZUNyZWF0ZWQiOiIyMDIxLTAyLTEwVDE1OjAxOjA4LjIxMloiLCJfX3YiOjB9LCJpYXQiOjE2MTM1NjczNjYsImV4cCI6MTYxMzU3MDk2Nn0.GVdgtN7ZNXLT64I8xC86645hR2Sc0Nx9YBbdapXd5vU"
             }
         }).then((response) => {
             console.log('response', response)
@@ -116,23 +116,26 @@ const DisplayAllPosts = () => {
             fullText:fullText
         }, {
             headers:{
-                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMjNmNTM0NGVhZTVlNGI0ZmI4M2VlMSIsIm5hbWUiOiJEdW1pc2FuaSBSb2RyaWNrIiwiZW1haWwiOiJyb2RyaWNrZHVtaUByaWdodHMuY29tIiwiZGF0ZUNyZWF0ZWQiOiIyMDIxLTAyLTEwVDE1OjAxOjA4LjIxMloiLCJfX3YiOjB9LCJpYXQiOjE2MTM0MDQ2MDIsImV4cCI6MTYxMzQwODIwMn0.FARy9vdhAm4u2hn9nxzweIwlO33J0-m8niocook-Is0"
+                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMjNmNTM0NGVhZTVlNGI0ZmI4M2VlMSIsIm5hbWUiOiJEdW1pc2FuaSBSb2RyaWNrIiwiZW1haWwiOiJyb2RyaWNrZHVtaUByaWdodHMuY29tIiwiZGF0ZUNyZWF0ZWQiOiIyMDIxLTAyLTEwVDE1OjAxOjA4LjIxMloiLCJfX3YiOjB9LCJpYXQiOjE2MTM1NjczNjYsImV4cCI6MTYxMzU3MDk2Nn0.GVdgtN7ZNXLT64I8xC86645hR2Sc0Nx9YBbdapXd5vU"
             }
         }).then((response) => {
             if (response.status === 200) {
                 alert('200: Request Sent')
             }
             console.log('response', response)
+        }).catch(err => {
+            if (err.response.status === 403) {
+                alert('403: Forbiden');
+            };
+
+            if (err.response.status === 400) {
+                alert('400: Bad request')
+            };
+
+            if (err.response.status === 500) {
+                alert('500: Server Error')
+            }
         })
-        //     .catch(err => {
-        //     if (err.response.status === 403) {
-        //         alert('403: Forbiden');
-        //     };
-        //
-        //     if (err.response.status === 400) {
-        //         alert('400: Bad request')
-        //     }
-        // })
 
     };
 

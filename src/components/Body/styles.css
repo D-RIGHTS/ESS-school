@@ -14,6 +14,8 @@
 /*320px-480px*/
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+
+
     .HeroSection-styles {
         flex-wrap: wrap;
     }
@@ -63,6 +65,10 @@
     .Notifications {
         font-size: x-small;
         height: 500px;
+    }
+    .reviews {
+        max-width: 200px;
+
     }
 }
 

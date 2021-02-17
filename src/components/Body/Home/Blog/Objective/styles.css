@@ -13,7 +13,12 @@
     outline: none;
     margin: 5px;
     border-bottom: 1px solid #b3b0b0;
+    width: 100%;
+    max-width: 400px;
+
 }
+
+
 
 .likes{
     display: flex;
