@@ -4,7 +4,7 @@ import React from "react";
 const ModifyPost = ({ title, description, fullText, saveTitle, saveDescription, saveFullText, updatePost }) => {
     return (
         <>
-            <form>
+            <form className="CreateForm">
                 <h1>Modify Post!</h1>
                 <br />
 

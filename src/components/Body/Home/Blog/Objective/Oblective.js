@@ -29,7 +29,7 @@ function Objective () {
                     <br />
                     <div className="reviewsform">
                         <label htmlFor="text"></label>
-                        <input className="reviews" type="text" placeholder="Enter your comment below" size="50"/>
+                        <input className="reviews" type="text" placeholder="Enter your comment below" size="30" />
                         <i className="fas fa-plus"></i>
                     </div>
                 </div>

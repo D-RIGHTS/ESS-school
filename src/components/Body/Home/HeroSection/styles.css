@@ -8,17 +8,17 @@
  /*align-items: center;*/
 }
 
-.HeroSection-styles::before,
-.HeroSection-styles::after {
- content: "";
- position: absolute;
- height: 15px;
- top: 525px;
- right: 0;
- left: 0;
- background: white;
- transform: skewY(-6deg);
-}
+/*.HeroSection-styles::before,*/
+/*.HeroSection-styles::after {*/
+/* content: "";*/
+/* position: absolute;*/
+/* height: 15px;*/
+/* top: 525px;*/
+/* right: 0;*/
+/* left: 0;*/
+/* background: white;*/
+/* transform: skewY(-6deg);*/
+/*}*/
 
 /*HeroSection-container styles*/
 
@@ -35,17 +35,6 @@
  margin: 10px 20px;
 }
 
-/*.HeroSection-styles::before,*/
-/*.HeroSection-styles::after {*/
-/* content: "";*/
-/* position: absolute;*/
-/* height: 100px;*/
-/* bottom: -70px;*/
-/* right: 0;*/
-/* left: 0;*/
-/* background: white;*/
-/* transform: skewY(-3deg);*/
-/*}*/
 
 /*WelcomeNote Styles*/
 

@@ -1,8 +1,8 @@
-.ModifyPost {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/*.ModifyPost {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
 
 .h1Modify {
     padding: 10px;
@@ -14,4 +14,11 @@
 
 .modifyTextArea {
     margin: 10px;
+}
+
+.ModPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }

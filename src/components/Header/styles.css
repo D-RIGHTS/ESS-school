@@ -32,6 +32,7 @@
 
 .h4List {
     padding: 10px;
+    font-weight: bold;
 }
 
 
@@ -124,3 +125,41 @@
 .Success {
     color: #151714;
 }
+
+
+/*Media Queries*/
+
+/*Header*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+   .container {
+        font-size: 10px;
+    }
+    .ulMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    .login-details {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        font-size: 13px;
+    }
+    .ulMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    .login-details {
+        align-items: flex-start;
+    }
+    .signUpTxt {
+        font-size: inherit;
+    }
+}
+
+
+
+
