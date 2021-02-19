@@ -23,6 +23,7 @@ function Header () {
                     <h4 className="sign-up"><Link to="/SignUpForm">Sign Up</Link></h4>
                     <h4 className="sign-in"><Link to="/SignInForm">Sign In</Link></h4>
                 </div>
+                <i className="fas fa-bars"></i>
             </section>
         </div>
     )
