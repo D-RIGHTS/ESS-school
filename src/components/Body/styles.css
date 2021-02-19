@@ -30,7 +30,9 @@
     .requestFormContainer {
         position: inherit;
         font-size: 12px;
-        margin: 0 13px;
+    }
+    .requestForm {
+        padding: 5px 1px;
     }
     .LevelCardsContainer {
         font-size: 12px;

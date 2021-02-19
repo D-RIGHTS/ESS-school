@@ -1,6 +1,6 @@
 import './App.css';
 import "./styles.css";
-// import Header from "./components/Header/Header";
+import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import HeaderTwo from "./components/Header/HeaderTwo";
 // import axios from "axios";
@@ -15,7 +15,7 @@ import HeaderTwo from "./components/Header/HeaderTwo";
 function App() {
   return (
     <div className="App">
-        {/*<Header />*/}
+        <Header />
         <HeaderTwo />
         <Body />
     </div>
