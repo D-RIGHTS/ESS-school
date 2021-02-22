@@ -123,19 +123,20 @@ const DisplayAllPosts = () => {
                 alert('200: Request Sent')
             }
             console.log('response', response)
-        }).catch(err => {
-            if (err.response.status === 403) {
-                alert('403: Forbiden');
-            };
-
-            if (err.response.status === 400) {
-                alert('400: Bad request')
-            };
-
-            if (err.response.status === 500) {
-                alert('500: Server Error')
-            }
         })
+        //     .catch(err => {
+        //     if (err.response.status === 403) {
+        //         alert('403: Forbiden');
+        //     };
+        //
+        //     if (err.response.status === 400) {
+        //         alert('400: Bad request')
+        //     };
+        //
+        //     if (err.response.status === 500) {
+        //         alert('500: Server Error')
+        //     }
+        // })
 
     };
 

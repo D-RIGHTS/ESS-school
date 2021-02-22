@@ -31,9 +31,7 @@
         position: inherit;
         font-size: 12px;
     }
-    .requestForm {
-        padding: 5px 1px;
-    }
+
     .LevelCardsContainer {
         font-size: 12px;
     }
@@ -66,11 +64,14 @@
     .Feedback,
     .Notifications {
         font-size: x-small;
-        height: 500px;
+        height: 700px;
     }
     .reviews {
         max-width: 200px;
-
+    }
+    .myOfflineMessage {
+        font-size: 12px;
+        padding-bottom: 300px;
     }
 }
 
