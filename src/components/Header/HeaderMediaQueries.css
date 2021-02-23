@@ -1,0 +1,120 @@
+
+               /*Media Queries*/
+
+                  /*Header*/
+
+                /*320px-480px*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        font-size: 10px;
+    }
+    .ulMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    .login-details {
+        align-items: flex-start;
+        font-size: small;
+    }
+    .sign-up,
+    .sign-in {
+        background-color: darkgrey;
+    }
+    .Header {
+        display: none;
+    }
+    .logo h1 {
+        font-style: italic;
+        font-family: 'Font Awesome 5 Free', sans-serif;
+    }
+    .sign-up-container,
+    .sign-in-container {
+        font-size: x-small;
+    }
+    .LogoName {
+        display: none;
+    }
+
+}
+
+                /*481px — 768px*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        font-size: 13px;
+    }
+    .ulMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    .login-details {
+        align-items: flex-start;
+        font-size: small;
+    }
+    .signUpTxt {
+        font-size: inherit;
+    }
+    .Header {
+        display: none;
+    }
+    .sign-up,
+    .sign-in {
+        background-color: darkgrey;
+    }
+    .sign-up-container,
+    .sign-in-container {
+        font-size: x-small;
+    }
+    .LogoName {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 530px) and (max-width: 699px) {
+
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 768px) {
+
+
+}
+
+               /*769px — 1024px*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .Header {
+        display: none;
+    }
+
+    .EESLogo {
+        display: none;
+    }
+
+    .sign-up-container,
+    .sign-in-container {
+        font-size: x-small;
+    }
+
+    .login-details {
+        align-items: flex-start;
+        font-size: small;
+    }
+}
+
+               /*1201px and more*/
+
+@media screen and (min-width: 1025px)  {
+    .HeaderTwo {
+        display: none;
+    }
+
+}
+
+
+
+
+
+

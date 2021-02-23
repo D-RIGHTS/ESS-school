@@ -10,6 +10,7 @@ import SignUpForm from "../Header/signUp/SignUpForm";
 import SignInForm from "../Header/signIn/SignInForm";
 import OfflineNote from "./OfflineNote";
 import "./styles.css"
+import "./BodyMediaQueries.css"
 
 function Body() {
     return(

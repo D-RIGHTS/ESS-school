@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./styles.css";
+import "./HeaderMediaQueries.css";
 import {Link} from "react-router-dom";
 
 
@@ -9,13 +10,14 @@ const HeaderTwo = () => {
     const showSideBar = () => setSidebar(!sidebar)
 
     return (
-        <>
+        <div className="HeaderTwo">
             <div className="navbar">
                 <Link to="#" className="menu-bars">
                     <i className="fas fa-bars" onClick={showSideBar}></i>
                 </Link>
                 <div className="logo">
-                    <h1><Link to="/Home">EES</Link></h1>
+                    <h1 className="EESLogo"><Link to="/Home">EES</Link></h1>
+                    <h1 className="LogoName"><Link to="/Home">Essential English School</Link></h1>
                 </div>
 
             </div>
@@ -35,11 +37,15 @@ const HeaderTwo = () => {
                         <li className="nav-text"><Link to="/Feedback"><i className="fas fa-comments-dollar"></i>Feedback</Link></li>
                         <li className="nav-text"><Link to="/Notifications"><i className="fas fa-comment-dots"></i>Notifications</Link></li>
                     </ul>
-                </ul>
+                    <div className="login-details">
+                        <h4 className="sign-up"><Link to="/SignUpForm">Sign Up</Link></h4>
+                        <h4 className="sign-in"><Link to="/SignInForm">Sign In</Link></h4>
+                    </div>
 
+                </ul>
             </nav>
 
-        </>
+        </div>
     )
 }
 

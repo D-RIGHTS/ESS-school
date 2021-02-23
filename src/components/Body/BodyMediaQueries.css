@@ -1,0 +1,221 @@
+/*!*Media Queries*!*/
+
+/*!*320px-480px*!*/
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    .HeroSection-styles {
+        flex-wrap: wrap;
+    }
+    .WelcomeNote {
+        font-size: 12px;
+        width: 100%;
+        max-width: 200px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .requestFormContainer {
+        position: inherit;
+        font-size: 12px;
+    }
+
+    .LevelCardsContainer {
+        font-size: 12px;
+    }
+    .LevelImages {
+        height: 150px;
+    }
+    .levelbtn {
+        font-size: 10px;
+    }
+    .txt {
+        font-size: 12px;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 30px;
+    }
+    .Objectivepic {
+        display: none;
+    }
+    .CreateForm,
+    .ModPost {
+        font-size: x-small;
+    }
+    .AboutUs,
+    .Courses,
+    .LiveForum,
+    .Feedback,
+    .Notifications {
+        font-size: x-small;
+        height: 700px;
+    }
+    .reviews {
+        max-width: 200px;
+    }
+    .myOfflineMessage {
+        font-size: 12px;
+        padding-bottom: 300px;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 480px) {
+    .LevelImages {
+        height: 200px;
+    }
+}
+
+
+
+/*!*481px-768px*!*/
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .HeroSection-styles {
+        flex-wrap: wrap;
+    }
+    .WelcomeNote {
+        font-size: 12px;
+        width: 100%;
+        max-width: 150px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .requestFormContainer {
+        font-size: 13px;
+    }
+    .LevelCardsContainer {
+        font-size: 12px;
+    }
+    .LevelImages {
+        height: 250px;
+    }
+    .levelbtn {
+        font-size: 10px;
+    }
+    .txt {
+        font-size: 12px;
+        width: 100%;
+        max-width: 480px;
+       margin: 0 30px;
+    }
+    .Objectivepic {
+        display: none;
+    }
+    .CreateForm,
+    .ModPost {
+        font-size: x-small;
+    }
+    .AboutUs,
+    .Courses,
+    .LiveForum,
+    .Feedback,
+    .Notifications {
+        font-size: x-small;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 530px) and (max-width: 699px) {
+    .cardLess {
+        width: 100%;
+        max-width: 155px;
+    }
+    .LevelImages {
+        height: 100px;
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+
+    @media screen and (min-width: 700px) and (max-width: 768px) {
+    .LevelCardsContainer {
+        font-size: x-small;
+    }
+    .LevelImages {
+        height: 100px;
+        width: 100%;
+        max-width: 200px;
+    }
+    .cardLess {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+                  /*769px — 1024px*/
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+    .WelcomeNote {
+        font-size: 14px;
+        width: 100%;
+        max-width: 300px;
+    }
+    .requestFormContainer {
+        font-size: 18px;
+    }
+    .LevelImages {
+        height: 180px;
+        width: 100%;
+        max-width: 280px;
+    }
+    .cardLess {
+        width: 100%;
+        max-width: 280px;
+    }
+    .ObjectiveContainer {
+        padding: 50px;
+    }
+    .Objectivepic {
+       display: none;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    .WelcomeNote {
+        font-size: 14px;
+        width: 100%;
+        max-width: 350px;
+    }
+    .requestFormContainer {
+        font-size: 22px;
+    }
+    .LevelImages {
+        height: 230px;
+        width: 100%;
+        max-width: 320px;
+    }
+    .cardLess {
+        width: 100%;
+        max-width: 320px;
+    }
+    .ObjectiveContainer {
+        padding: 50px;
+    }
+    .Objectivepic {
+        display: none;
+    }
+}
+
+       /*1024px & more*/
+
+@media screen and (min-width: 1025px)  {
+    .WelcomeNote {
+        font-size: 14px;
+        width: 100%;
+        max-width: 550px;
+    }
+    .ObjectiveContainer {
+        padding: 50px;
+    }
+}
+
+
+
+
+
+
