@@ -4,19 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
-// import axios from "axios";
-//
-// axios.interceptors.request.use(
-//     request => {
-//         if(request.url.includes('checkout') || request.url.includes('biling') || request.url.includes('orders')) {
-//             request.headers['X-USER-ID'] = store.getState().persistedUserReducer.userInfo.username;
-//         }
-//         return request;
-//     },
-//     error => {
-//         return Promise.reject(error);
-//     }
-// )
+
 
 ReactDOM.render(
   <React.StrictMode>

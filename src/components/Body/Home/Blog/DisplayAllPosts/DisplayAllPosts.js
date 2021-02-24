@@ -4,6 +4,9 @@ import Post from "../Post/Post"
 import ModifyPost from "../ModifyPost/ModifyPost";
 import "./styles.css";
 import axios from "axios";
+import AxiosInstance from "../../../../../axiosInts"
+
+
 
 const DisplayAllPosts = () => {
 
@@ -59,7 +62,7 @@ const DisplayAllPosts = () => {
         axios.delete("http://localhost:3001/api/v1/posts/602d1d287b5962197105acf1",
             {
             headers: {
-                authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMjNmNTM0NGVhZTVlNGI0ZmI4M2VlMSIsIm5hbWUiOiJEdW1pc2FuaSBSb2RyaWNrIiwiZW1haWwiOiJyb2RyaWNrZHVtaUByaWdodHMuY29tIiwiZGF0ZUNyZWF0ZWQiOiIyMDIxLTAyLTEwVDE1OjAxOjA4LjIxMloiLCJfX3YiOjB9LCJpYXQiOjE2MTM1NjczNjYsImV4cCI6MTYxMzU3MDk2Nn0.GVdgtN7ZNXLT64I8xC86645hR2Sc0Nx9YBbdapXd5vU"
+                authorization: "Bearer ${accessToken}"
             }
         }).then((response) => {
             console.log('response', response)
@@ -90,7 +93,7 @@ const DisplayAllPosts = () => {
             fullText:fullText
         }, {
             headers:{
-                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMjNmNTM0NGVhZTVlNGI0ZmI4M2VlMSIsIm5hbWUiOiJEdW1pc2FuaSBSb2RyaWNrIiwiZW1haWwiOiJyb2RyaWNrZHVtaUByaWdodHMuY29tIiwiZGF0ZUNyZWF0ZWQiOiIyMDIxLTAyLTEwVDE1OjAxOjA4LjIxMloiLCJfX3YiOjB9LCJpYXQiOjE2MTM1NjczNjYsImV4cCI6MTYxMzU3MDk2Nn0.GVdgtN7ZNXLT64I8xC86645hR2Sc0Nx9YBbdapXd5vU"
+                Authorization: "Bearer "
             }
         }).then((response) => {
             console.log('response', response)
@@ -110,13 +113,13 @@ const DisplayAllPosts = () => {
        getFullText.current.value="";
        toggleCreateNewPost()
 
-        axios.post("http://localhost:3001/api/v1/posts", {
+        AxiosInstance.post("/posts", {
             title:title,
             description:description,
             fullText:fullText
         }, {
             headers:{
-                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMjNmNTM0NGVhZTVlNGI0ZmI4M2VlMSIsIm5hbWUiOiJEdW1pc2FuaSBSb2RyaWNrIiwiZW1haWwiOiJyb2RyaWNrZHVtaUByaWdodHMuY29tIiwiZGF0ZUNyZWF0ZWQiOiIyMDIxLTAyLTEwVDE1OjAxOjA4LjIxMloiLCJfX3YiOjB9LCJpYXQiOjE2MTM1NjczNjYsImV4cCI6MTYxMzU3MDk2Nn0.GVdgtN7ZNXLT64I8xC86645hR2Sc0Nx9YBbdapXd5vU"
+                Authorization: "Bearer ${accessToken}"
             }
         }).then((response) => {
             if (response.status === 200) {

@@ -1,6 +1,7 @@
 import {useState} from "react";
 import validateInfo from "./signInValidateInfo";
 import axios from "axios";
+import AxiosInstance from "../../../axiosInts"
 
 const useFormSignIn = (initialValues) => {
     const [values, setValues] = useState(initialValues);
@@ -23,11 +24,15 @@ const useFormSignIn = (initialValues) => {
         !isErrors && setIsSubmitting(true);
 
 
-        axios.post("http://localhost:3001/api/v1/auth", {
+
+
+        AxiosInstance.post("/auth", {
             email: values.email,
             password: values.password
         }).then((response) => {
             console.log('response', response)
+            const { token } = response.data
+            localStorage.setItem("token", token)
         })
 
 
