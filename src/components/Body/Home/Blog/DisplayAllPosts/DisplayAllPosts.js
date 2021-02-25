@@ -87,13 +87,13 @@ const DisplayAllPosts = () => {
         setAllPosts(updatedPost);
         toggleModify();
 
-        axios.patch("http://localhost:3001/api/v1/posts/602d1d287b5962197105acf1", {
+        axios.patch("/posts/.id", {
             title:title,
             description:description,
             fullText:fullText
         }, {
             headers:{
-                Authorization: "Bearer "
+                Authorization: "Bearer ${accessToken}"
             }
         }).then((response) => {
             console.log('response', response)
@@ -127,19 +127,19 @@ const DisplayAllPosts = () => {
             }
             console.log('response', response)
         })
-        //     .catch(err => {
-        //     if (err.response.status === 403) {
-        //         alert('403: Forbiden');
-        //     };
-        //
-        //     if (err.response.status === 400) {
-        //         alert('400: Bad request')
-        //     };
-        //
-        //     if (err.response.status === 500) {
-        //         alert('500: Server Error')
-        //     }
-        // })
+            .catch(err => {
+            if (err.response.status === 403) {
+                alert('403: Forbiden');
+            };
+
+            if (err.response.status === 400) {
+                alert('400: Bad request')
+            };
+
+            if (err.response.status === 500) {
+                alert('500: Server Error')
+            }
+        })
 
     };
 
