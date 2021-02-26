@@ -4,6 +4,11 @@ function Objective () {
     const [likes, setLikes] = React.useState(0);
     const [dislikes, setDislikes] = React.useState(0);
 
+    const handleSubmit = event => {
+        event.preventDefault();
+        alert("You have Submitted")
+    }
+
     return (
         <div className="Objective">
             <article className="ObjectiveContainer">
@@ -28,9 +33,15 @@ function Objective () {
                     </div>
                     <br />
                     <div className="reviewsform">
-                        <label htmlFor="text"></label>
-                        <input className="reviews" type="text" placeholder="Enter your comment below"  />
-                        <i className="fas fa-plus"></i>
+                        <form onSubmit={handleSubmit}>
+                            <label htmlFor="text"></label>
+                            <input className="reviews"
+                                   type="text"
+                                   placeholder="Enter your comment below"  />
+
+
+                            <i type="submit" className="fas fa-plus"></i>
+                        </form>
                     </div>
                 </div>
                 <div className="Objectivepic">

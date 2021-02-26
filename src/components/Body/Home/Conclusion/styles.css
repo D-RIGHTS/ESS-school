@@ -1,0 +1,22 @@
+.Conclusion {
+    height: 500px;
+    color: wheat;
+    border-radius: 10px;
+
+}
+
+.Conclusion h2 {
+    padding: 20px;
+    font-family: AnjaliOldLipi;
+    font-style: italic;
+}
+
+.comments {
+    padding: 0 20px;
+    font-size: 18px;
+    display: flex;
+}
+
+.down {
+    padding: 0 10px;
+}

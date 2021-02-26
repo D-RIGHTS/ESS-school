@@ -3,6 +3,8 @@ import "./HeroSection/styles.css"
 import HeroSection from "./HeroSection/HeroSection";
 import LevelCards from "./LevelCards/LevelCards";
 import Blog from "./Blog/Blog";
+import Conclusion from "./Conclusion/Conclusion";
+
 
 
 function Home () {
@@ -11,6 +13,7 @@ function Home () {
            <HeroSection />
            <LevelCards />
            <Blog />
+           <Conclusion />
 
 
         </div>
