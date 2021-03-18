@@ -1,6 +1,5 @@
 import {useState} from "react";
 import validateInfo from "./signInValidateInfo";
-import axios from "axios";
 import AxiosInstance from "../../../axiosInts"
 
 const useFormSignIn = (initialValues) => {

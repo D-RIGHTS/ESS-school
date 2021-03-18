@@ -1,13 +1,15 @@
 import React from "react";
+import DisplayPost from "./DisplayPost"
+
+
 
 function Objective () {
+
     const [likes, setLikes] = React.useState(0);
     const [dislikes, setDislikes] = React.useState(0);
 
-    const handleSubmit = event => {
-        event.preventDefault();
-        alert("You have Submitted")
-    }
+
+
 
     return (
         <div className="Objective">
@@ -33,15 +35,8 @@ function Objective () {
                     </div>
                     <br />
                     <div className="reviewsform">
-                        <form onSubmit={handleSubmit}>
-                            <label htmlFor="text"></label>
-                            <input className="reviews"
-                                   type="text"
-                                   placeholder="Enter your comment below"  />
+                        <DisplayPost />
 
-
-                            <i type="submit" className="fas fa-plus"></i>
-                        </form>
                     </div>
                 </div>
                 <div className="Objectivepic">

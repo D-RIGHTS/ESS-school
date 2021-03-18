@@ -3,14 +3,7 @@ import "./styles.css";
 import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import HeaderTwo from "./components/Header/HeaderTwo";
-// import axios from "axios";
-//
-// axios.interceptors.response.use(undefined, function axiosRetryInterceptor(err) {
-//     if (err.response.status === 401 || err.response.data.message === '401 Unauthorized') {
-//         isUserValid(username, disableNavigation, clearCache, clearUserInfo);
-//     }
-//     return Promise.reject(err);
-// })
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
@@ -18,6 +11,7 @@ function App() {
         <Header />
         <HeaderTwo />
         <Body />
+        <Footer />
     </div>
   );
 }

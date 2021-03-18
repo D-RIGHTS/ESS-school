@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./styles.css";
-import con from "./con.jpg"
+import conf from "./conf.jpg"
 
 function Conclusion () {
 
@@ -9,7 +9,7 @@ function Conclusion () {
 
 
     return(
-        <div className="Conclusion" style={{ backgroundImage: `url(${con}` }}>
+        <div className="Conclusion" style={{ backgroundImage: `url(${conf}` }}>
             <h2>
                 <p>We, at EES Appreciate the time taken to see us through. Never hesiate picking up for phone and reaching out to us.</p>
                 <br />
@@ -29,6 +29,7 @@ function Conclusion () {
                     <br />
                     {dislike}
                 </span>
+
             </div>
         </div>
     )

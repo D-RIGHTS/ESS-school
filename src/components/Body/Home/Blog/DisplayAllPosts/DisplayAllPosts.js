@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import CreateNewPost from "../CreateNewPost/CreateNewPost";
 import Post from "../Post/Post"
 import ModifyPost from "../ModifyPost/ModifyPost";
@@ -24,10 +24,14 @@ const DisplayAllPosts = () => {
     const getDescription = useRef();
     const getFullText = useRef();
 
+    useEffect(() => {
+        console.log('allPosts', allPosts)
+    }, [allPosts])
+
     const saveTitle = event => {
-        setTitle(event.target.value);
+        setTitle(event.target.value)
         // console.log('title', title)
-    };
+    }
 
     const saveDescription = event => {
         setDescription(event.target.value);
@@ -59,7 +63,7 @@ const DisplayAllPosts = () => {
         });
         setAllPosts(modifiedPost)
 
-        axios.delete("http://localhost:3001/api/v1/posts/602d1d287b5962197105acf1",
+        axios.delete("/posts/",
             {
             headers: {
                 authorization: "Bearer ${accessToken}"
@@ -104,7 +108,7 @@ const DisplayAllPosts = () => {
         event.preventDefault();
         const id = Date.now();
         setAllPosts([...allPosts, { title, description, fullText, id }]);
-        console.log('allPosts', allPosts);
+        // console.log('allPosts', allPosts);
         setTitle("");
         setDescription("");
         setFullText("");
@@ -128,17 +132,17 @@ const DisplayAllPosts = () => {
             console.log('response', response)
         })
             .catch(err => {
-            if (err.response.status === 403) {
-                alert('403: Forbiden');
-            };
-
-            if (err.response.status === 400) {
-                alert('400: Bad request')
-            };
-
-            if (err.response.status === 500) {
-                alert('500: Server Error')
-            }
+            // if (err.response.status === 403) {
+            //     alert('403: Forbiden');
+            // };
+            //
+            // if (err.response.status === 400) {
+            //     alert('400: Bad request')
+            // };
+            //
+            // if (err.response.status === 500) {
+            //     alert('500: Server Error')
+            // }
         })
 
     };
@@ -163,7 +167,7 @@ const DisplayAllPosts = () => {
         )
     }
     else if (isModifyPost) {
-        const post = allPosts.find(post => {
+        const post = allPosts.find((post) => {
             return post.id === editPostId;
         });
         return (
