@@ -5,11 +5,11 @@ const Post = ({ title, description, fullText, editPost, deletePost, id }) => {
     return (
         <>
             <section className="postSec">
-                <h4 className="postTitle">{title}</h4>
-                <h5 className="postDescription">{description}</h5>
+                <h3 className="postTitle">{title}</h3>
+                <h4 className="postDescription">{description}</h4>
                 <p className="postParagraph">{fullText}</p>
-                <button onClick={() => editPost(id)} className="postEdit">Edit</button>
-                <button onClick={() => deletePost(id)} className="postDelete">Delete</button>
+                <button onClick={() => editPost(id)} className="postEdit"><i className="fas fa-user-edit"/></button>
+                <button onClick={() => deletePost(id)} className="postDelete"><i className="far fa-trash-alt"/></button>
             </section>
         </>
     )

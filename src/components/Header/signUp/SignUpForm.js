@@ -13,7 +13,7 @@ function SignUpForm() {
 
 
     return (
-        <div className="signUpDiv">
+        <article className="signUpDiv">
             {!isSubmitting && <div className="sign-up-container">
                 <h2>Sign Up</h2>
                 Create your account!
@@ -78,7 +78,7 @@ function SignUpForm() {
             </div>}
 
             {isSubmitting && <FormSuccess />}
-        </div>
+        </article>
     )
 }
 

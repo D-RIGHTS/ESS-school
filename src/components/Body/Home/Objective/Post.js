@@ -3,7 +3,7 @@ import React from "react";
 const Post = ({comment}) => {
     return(
         <div>
-            <h3>{comment}</h3>
+            <h4 className="ObjPost">{comment}</h4>
         </div>
     )
 }

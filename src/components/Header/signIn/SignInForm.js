@@ -8,7 +8,7 @@ function SignInForm (){
     const { handleChange, handleSubmit, values, errors, isSubmitting } = useFormSignIn({ email:"", password:"", })
 
     return(
-        <div className="signInDiv">
+        <article className="signInDiv">
             {!isSubmitting && <div className="sign-in-container">
                 <h2>Sign In</h2>
                 Enter your Login Details Below
@@ -47,7 +47,7 @@ function SignInForm (){
 
             </div>}
             { isSubmitting && <Success /> }
-        </div>
+        </article>
     )
 }
 

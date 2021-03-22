@@ -153,19 +153,19 @@
     position: fixed;
     top: 0;
     left: -100%;
-    transition: 3850ms;
+    transition: 50ms;
 }
 
 .nav-menu.active {
     left: 0;
-    transition: 2350ms;
+    transition: 50ms;
 }
 
 .nav-text {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 8px 0 8px 16px;
+    padding: 8px 0 8px;
     list-style: none;
     height: 40px;
 }
@@ -180,6 +180,10 @@
     align-items: center;
     padding: 0 16px;
     border-radius: 4px;
+}
+
+.nav-text i {
+    padding: 0 10px;
 }
 
 .nav-text a:hover {

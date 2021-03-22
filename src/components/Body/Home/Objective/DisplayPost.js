@@ -1,13 +1,18 @@
-import React, {useState, useRef, useEffect} from "react";
+import React, { useRef, useEffect, useContext } from "react";
 import CreatePost from "./CreatePost";
 import Post from "./Post";
+import {ObjectiveContext} from "./ObjectiveContext";
+
 
 const DisplayPost = () => {
 
-    //useState Initializers
-    const [comment, setComment] = useState("");
-    const [allPost, setAllPost] = useState([]);
-    const [isCreatePost, setIsCreatePost] = useState(false);
+    const  [comment, setComment, allPost, setAllPost, isCreatePost, setIsCreatePost] = useContext(ObjectiveContext)
+
+
+    // //useState Initializers
+    // const [comment, setComment] = useState("");
+    // const [allPost, setAllPost] = useState([]);
+    // const [isCreatePost, setIsCreatePost] = useState(false);
 
     //useRef Initializers
     const getComment = useRef()
@@ -73,7 +78,7 @@ const DisplayPost = () => {
                 })
             )}
             <br />
-            <button onClick={toggleCreatePost}><i className="fas fa-user-plus"></i></button>
+            <button onClick={toggleCreatePost}><i className="fas fa-user-plus"/></button>
         </div>
       </>
   )

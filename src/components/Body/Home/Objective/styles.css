@@ -1,0 +1,55 @@
+.ObjectiveContainer {
+    display: flex;
+}
+
+.Objectivepic img {
+    height: 300px;
+}
+
+.reviews {
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-bottom: 1px solid #b3b0b0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.likes{
+    display: flex;
+}
+
+.down,
+.up{
+    margin:  0 5px;
+}
+
+.txt {
+    margin: 50px 0;
+    font-weight: bold;
+
+}
+
+.ObjPost {
+    color: brown;
+    font-style: italic;
+}
+
+
+/*Media Queries*/
+
+/*320px-480px*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .txt {
+        padding: 50px;
+    }
+}
+
+/*481px-768*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .txt {
+        padding: 50px;
+    }
+}

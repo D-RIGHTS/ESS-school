@@ -1,28 +1,16 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, {  useEffect, useContext } from "react";
 import CreateNewPost from "../CreateNewPost/CreateNewPost";
 import Post from "../Post/Post"
 import ModifyPost from "../ModifyPost/ModifyPost";
 import "./styles.css";
-import axios from "axios";
 import AxiosInstance from "../../../../../axiosInts"
-
+import {BlogContext} from "../BlogContext";
 
 
 const DisplayAllPosts = () => {
 
-                // useState Initializers
-    const [title, setTitle] = useState("");
-    const [description, setDescription] = useState("");
-    const [fullText, setFullText] = useState("");
-    const [allPosts, setAllPosts] = useState([]);
-    const [isCreateNewPost, setIsCreateNewPost] = useState(false);
-    const [isModifyPost, setIsModifyPost] = useState(false);
-    const [editPostId, setEditPostId] = useState("");
+    const [ title, setTitle,description,setDescription,fullText,setFullText, allPosts, setAllPosts, isCreateNewPost, setIsCreateNewPost, isModifyPost, setIsModifyPost, editPostId, setEditPostId, getTitle, getDescription, getFullText ] = useContext(BlogContext)
 
-                // useRef Initializers
-    const getTitle = useRef();
-    const getDescription = useRef();
-    const getFullText = useRef();
 
     useEffect(() => {
         console.log('allPosts', allPosts)
@@ -63,9 +51,10 @@ const DisplayAllPosts = () => {
         });
         setAllPosts(modifiedPost)
 
-        axios.delete("/posts/",
+        AxiosInstance.delete("/posts/id",
             {
             headers: {
+                // eslint-disable-next-line no-template-curly-in-string
                 authorization: "Bearer ${accessToken}"
             }
         }).then((response) => {
@@ -91,12 +80,13 @@ const DisplayAllPosts = () => {
         setAllPosts(updatedPost);
         toggleModify();
 
-        axios.patch("/posts/.id", {
+        AxiosInstance.patch("/posts/.id", {
             title:title,
             description:description,
             fullText:fullText
         }, {
             headers:{
+                // eslint-disable-next-line no-template-curly-in-string
                 Authorization: "Bearer ${accessToken}"
             }
         }).then((response) => {
@@ -123,6 +113,7 @@ const DisplayAllPosts = () => {
             fullText:fullText
         }, {
             headers:{
+                // eslint-disable-next-line no-template-curly-in-string
                 Authorization: "Bearer ${accessToken}"
             }
         }).then((response) => {
@@ -131,19 +122,19 @@ const DisplayAllPosts = () => {
             }
             console.log('response', response)
         })
-            .catch(err => {
-            // if (err.response.status === 403) {
-            //     alert('403: Forbiden');
-            // };
-            //
-            // if (err.response.status === 400) {
-            //     alert('400: Bad request')
-            // };
-            //
-            // if (err.response.status === 500) {
-            //     alert('500: Server Error')
-            // }
-        })
+        //     .catch(err => {
+        //     if (err.response.status === 403) {
+        //         alert('403: Forbidden');
+        //     };
+        //
+        //     if (err.response.status === 400) {
+        //         alert('400: Bad request')
+        //     };
+        //
+        //     if (err.response.status === 500) {
+        //         alert('500: Server Error')
+        //     }
+        // })
 
     };
 
@@ -185,10 +176,10 @@ const DisplayAllPosts = () => {
     return (
         <>
           <div className="Displaying">
-              <h2> Current Posts</h2>
+              <h3 className="BlogDes"> Essential English Current Posts</h3>
               {!allPosts.length ? (
                   <div>
-                      <h3>Nothing to Display</h3>
+                      <h4 className="BlogNos">Nothing to Display!</h4>
                   </div>
               ) : (
                    allPosts.map(eachPost => {
@@ -207,7 +198,7 @@ const DisplayAllPosts = () => {
               ) }
               <br />
               <br />
-              <button onClick={toggleCreateNewPost} >Create New Post</button>
+              <button className="CreateButton" onClick={toggleCreateNewPost} >Click to Create New Post</button>
           </div>
         </>
     )

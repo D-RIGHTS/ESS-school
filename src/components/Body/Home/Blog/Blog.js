@@ -1,14 +1,13 @@
 import React from "react";
-import "./Objective/styles.css";
-import Objective from "./Objective/Oblective";
+import "../Objective/styles.css";
 import DisplayAllPosts from "./DisplayAllPosts/DisplayAllPosts"
+import {BlogProvider} from "./BlogContext";
 
 function Blog () {
     return (
-        <div>
-            <Objective />
+        <BlogProvider>
             <DisplayAllPosts />
-        </div>
+        </BlogProvider>
     )
 }
 

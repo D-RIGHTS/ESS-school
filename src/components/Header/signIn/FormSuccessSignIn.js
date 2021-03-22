@@ -3,12 +3,10 @@ import "../styles.css";
 
 function FormSuccessSignIn () {
     return (
-        <div className="Success">
-
+        <article className="Success">
                 <h1>Congrats!!</h1>
                 <h3>You have successfully Signed In</h3>
-
-        </div>
+        </article>
     )
 }
 

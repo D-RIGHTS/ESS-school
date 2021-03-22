@@ -1,8 +1,9 @@
-import React, {useState} from "react";
-import "./styles.css"
+import React from "react";
+import "./styles.css";
 import { Link } from "react-router-dom";
 import FinalRequests from "./FinalRequests";
-import axios from "axios";
+// import axios from "axios";
+import {HeroSectionProvider} from "./HeroSectionContext";
 
 
 const HeroSection = () => {
@@ -16,7 +17,9 @@ const HeroSection = () => {
                 </div>
                 <div className="btn"><Link to="/OfflineNote">Learn More</Link></div>
             </section>
-           <FinalRequests />
+           <HeroSectionProvider>
+               <FinalRequests />
+           </HeroSectionProvider>
         </div>
     )
 }
@@ -31,7 +34,7 @@ export default HeroSection;
 //         email: formData.email
 //     }, {
 //         headers:{
-//             Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmYjI0NWNjMTRlYjRiMjI3NTI5NTEwZCIsImVtYWlsIjoiZHVtaXNhbmlAZHVtaS5jb20iLCJuYW1lIjoiRHVtZXp3ZW5pIiwiZGF0ZUNyZWF0ZWQiOiIyMDIwLTExLTE2VDA5OjI2OjM2LjI4OVoiLCJfX3YiOjB9LCJpYXQiOjE2MTE2NzE1NDgsImV4cCI6MTYxMTY3NTE0OH0.FneEwQCiNyBzdmedU0sNPpxd-gAnePDmdsaAqvuxoNI"
+//             Authorization : "Bearer "
 //         }
 //     })
 //         .then((res) =>{

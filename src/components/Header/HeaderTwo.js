@@ -13,7 +13,7 @@ const HeaderTwo = () => {
         <div className="HeaderTwo">
             <div className="navbar">
                 <Link to="#" className="menu-bars">
-                    <i className="fas fa-bars" onClick={showSideBar}></i>
+                    <i className="fas fa-bars" onClick={showSideBar}/>
                 </Link>
                 <div className="logo">
                     <h1 className="EESLogo"><Link to="/Home">EES</Link></h1>
@@ -25,17 +25,17 @@ const HeaderTwo = () => {
                 <ul className="nav-menu-items" onClick={showSideBar}>
                     <li className="navbar-toggle">
                         <Link to="#" className="menu-bars" >
-                            <i className="fas fa-times"></i>
+                            <i className="fas fa-times"/>
 
                         </Link>
                     </li>
                     <ul className="" >
-                        <li className="nav-text"><Link to="/Home"><i className="fas fa-home"></i> Home</Link></li>
-                        <li className="nav-text"><Link to="/AboutUs"><i className="fas fa-info-circle"></i>About Us</Link></li>
-                        <li className="nav-text"><Link to="/Courses"><i className="fas fa-book-reader"></i>Courses</Link></li>
-                        <li className="nav-text"><Link to="/LiveForum"><i className="fas fa-user-tie"></i>Live Forum</Link></li>
-                        <li className="nav-text"><Link to="/Feedback"><i className="fas fa-comments-dollar"></i>Feedback</Link></li>
-                        <li className="nav-text"><Link to="/Notifications"><i className="fas fa-comment-dots"></i>Notifications</Link></li>
+                        <li className="nav-text"><Link to="/Home"><i className="fas fa-home"/> Home</Link></li>
+                        <li className="nav-text"><Link to="/AboutUs"><i className="fas fa-info-circle"/>About Us</Link></li>
+                        <li className="nav-text"><Link to="/Courses"><i className="fas fa-book-reader"/>Courses</Link></li>
+                        <li className="nav-text"><Link to="/LiveForum"><i className="fas fa-user-tie"/>Live Forum</Link></li>
+                        <li className="nav-text"><Link to="/Feedback"><i className="fas fa-comments-dollar"/>Feedback</Link></li>
+                        <li className="nav-text"><Link to="/Notifications"><i className="fas fa-comment-dots"/>Notifications</Link></li>
                     </ul>
                     <div className="login-details">
                         <h4 className="sign-up"><Link to="/SignUpForm">Sign Up</Link></h4>

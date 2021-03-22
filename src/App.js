@@ -5,14 +5,17 @@ import Body from "./components/Body/Body";
 import HeaderTwo from "./components/Header/HeaderTwo";
 import Footer from "./components/Footer/Footer"
 
+
 function App() {
   return (
-    <div className="App">
-        <Header />
-        <HeaderTwo />
-        <Body />
-        <Footer />
-    </div>
+
+        <div className="App">
+            <Header />
+            <HeaderTwo />
+            <Body />
+            <Footer />
+        </div>
+
   );
 }
 

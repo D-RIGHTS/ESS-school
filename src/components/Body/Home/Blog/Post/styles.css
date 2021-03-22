@@ -2,25 +2,40 @@
     margin: 30px;
 }
 
-.postTitle,
-.postDescription,
-.postParagraph {
+.postTitle {
+    color: maroon;
+    font-weight: bolder;
+}
+.postDescription {
     padding: 5px 0;
+    color: saddlebrown;
+}
+
+.postParagraph {
+    font-style: italic;
+    font-weight: bold;
 }
 
 .postEdit {
-    padding: 5px;
-    margin: 1px;
-    background: yellow;
-    font-size: 10px;
-    border-radius: 5px;
+    border: none;
+    background-color: white;
+    padding: 10px 0;
+    font-size: 20px;
+
 }
 
 .postDelete {
-    padding: 5px;
-    margin: 10px;
-    background: red;
-    font-size: 10px;
-    border-radius: 5px;
+    border: none;
+    background-color: white;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.postEdit:hover {
+    font-size: 40px;
+}
+
+.postDelete:hover {
+    font-size: 40px;
 }
 

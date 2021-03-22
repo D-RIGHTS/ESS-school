@@ -1,24 +1,12 @@
-import React, {useState, useRef, useEffect} from "react"
+import React, { useEffect, useContext } from "react"
 import CreateRequest from "./CreateRequest";
 import "./styles.css";
+import {HeroSectionContext} from "./HeroSectionContext";
 
 function FinalRequests () {
 
-    //useState Initializers
-    const [name, setName] = useState("");
-    const [surname, setSurname] = useState("");
-    const [email, setEmail] = useState("");
-    const [tel, setTel] = useState("");
+    const [ name, setName, surname, setSurname, email, setEmail, tel, setTel, allRequests, setAllRequests, getName, getSurname, getEmail, getTel ] = useContext(HeroSectionContext)
 
-    const [allRequests, setAllRequests] = useState([]);
-
-
-
-    // useRef Initializers
-    const getName = useRef();
-    const getSurname = useRef();
-    const getEmail = useRef();
-    const getTel = useRef();
 
     // useEffect Initializers
 
@@ -62,8 +50,6 @@ function FinalRequests () {
         getTel.current.value="";
         // console.log('allRequests', allRequests)
         alert('Request successfully sent')
-
-
     };
 
 

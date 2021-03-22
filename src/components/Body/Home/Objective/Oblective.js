@@ -1,14 +1,12 @@
 import React from "react";
 import DisplayPost from "./DisplayPost"
-
+import {ObjectiveProvider} from "./ObjectiveContext";
 
 
 function Objective () {
 
     const [likes, setLikes] = React.useState(0);
     const [dislikes, setDislikes] = React.useState(0);
-
-
 
 
     return (
@@ -23,24 +21,26 @@ function Objective () {
                     <br />
                     <div className="likes">
                        <div className="up">
-                           <i onClick={ ()=> setLikes(likes + 1) } className="far fa-thumbs-up"></i>
+                           <i onClick={() => setLikes(likes + 1)} className="far fa-thumbs-up"/>
                            <br />
                            {likes}
                        </div>
                         <div className="down">
-                            <i onClick={ () => setDislikes(dislikes + 1) } className="far fa-thumbs-down"></i>
+                            <i onClick={() => setDislikes(dislikes + 1)} className="far fa-thumbs-down"/>
                             <br />
                             {dislikes}
                         </div>
                     </div>
                     <br />
                     <div className="reviewsform">
-                        <DisplayPost />
+                        <ObjectiveProvider>
+                            <DisplayPost />
+                        </ObjectiveProvider>
 
                     </div>
                 </div>
                 <div className="Objectivepic">
-                    <img src="Images/BlogImage.jpg" alt=""/>
+                    <img src={"Images/BlogImage.jpg"} alt=""/>
                 </div>
             </article>
         </div>

@@ -35,6 +35,10 @@
     .LogoName {
         display: none;
     }
+    .sign-up:hover,
+    .sign-in:hover {
+        background-color: #e28888;
+    }
 
 }
 
@@ -69,16 +73,26 @@
     .LogoName {
         display: none;
     }
+    .sign-up:hover,
+    .sign-in:hover {
+        background-color: #e28888;
+    }
 }
 
 
 @media screen and (min-width: 530px) and (max-width: 699px) {
-
+    .sign-up:hover,
+    .sign-in:hover {
+        background-color: #e28888;
+    }
 }
 
 
 @media screen and (min-width: 700px) and (max-width: 768px) {
-
+    .sign-up:hover,
+    .sign-in:hover {
+        background-color: #e28888;
+    }
 
 }
 
@@ -102,6 +116,10 @@
         align-items: flex-start;
         font-size: small;
     }
+    .sign-up:hover,
+    .sign-in:hover {
+        background-color: #e28888;
+    }
 }
 
                /*1201px and more*/
@@ -109,6 +127,17 @@
 @media screen and (min-width: 1025px)  {
     .HeaderTwo {
         display: none;
+    }
+    .h4List:hover {
+        font-size: 15px;
+        background-color: #fdf9f9;
+    }
+    .logo:hover {
+        background-color: #faf6f6;
+    }
+    .sign-up:hover,
+    .sign-in:hover {
+        background-color: skyblue;
     }
 
 }

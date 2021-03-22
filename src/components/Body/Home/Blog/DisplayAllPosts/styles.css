@@ -1,3 +1,22 @@
 .Displaying {
     padding: 30px;
+    /*text-align: center;*/
+}
+
+.BlogDes,
+.BlogNos {
+    text-align: center;
+}
+
+.CreateButton {
+    padding: 0 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+   background-color: white;
+}
+
+.CreateButton:hover {
+    color: blue;
+    font-size: 20px;
 }

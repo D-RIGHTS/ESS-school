@@ -1,10 +1,13 @@
 import React from "react";
+import FooterList from "./FooterList";
+import FooterSocial from "./FooterSocial";
 
 
 function Footer () {
     return(
         <div>
-           Footer
+           <FooterList />
+           <FooterSocial />
         </div>
     )
 }

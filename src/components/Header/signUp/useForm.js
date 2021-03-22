@@ -1,12 +1,11 @@
 import  { useState } from "react";
 import validateInfo from "./validateInfo";
-import axios from "axios"
+import AxiosInstance from '../../../axiosInts'
 
 const useForm = (initialValues) => {
+
     const [values, setValues] = useState(initialValues);
-
     const [errors, setErrors] = useState({});
-
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = event => {
@@ -25,7 +24,7 @@ const useForm = (initialValues) => {
         const isErrors = Object.keys(errors).length !== 0;
         !isErrors && setIsSubmitting(true);
 
-        axios.post("http://localhost:3001/api/v1/users", {
+        AxiosInstance.post("/users", {
             name:values.name,
             email:values.email,
             password:values.password
